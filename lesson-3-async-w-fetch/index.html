@@ -9,12 +9,23 @@
 <body>
 
     <header class="masthead">
+        <button class="unsplash">Unsplash</button>
+        <button class="nytimes">NyTimes</button>
+
         <h1>What are you interested in today?</h1>
 
-        <div class="site-container">
+        <div class="unsplash-form site-container">
             <form id="search-form" action="#">
                 <label for="search-keyword" class="visuallyhidden">What are you interested in today?</label>
-                <input id="search-keyword" type="text" name="search-keyword" placeholder="e.g. Android" required>
+                <input id="search-keyword" type="text" name="search-keyword" placeholder="search in unsplash" required>
+                <input id="submit-btn" type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="nytimes-form site-container" style="display: none;">
+            <form id="search-form" action="#">
+                <label for="search-keyword" class="visuallyhidden">What are you interested in today?</label>
+                <input id="search-keyword" type="text" name="search-keyword" placeholder="search in nytimes" required>
                 <input id="submit-btn" type="submit" value="Submit">
             </form>
         </div>
